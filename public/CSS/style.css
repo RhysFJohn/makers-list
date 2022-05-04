@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body{
+  min-height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(195, 225, 245, 1);
+  margin-bottom: 50px;
+  overflow: auto;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul{
+  overflow: hidden;
+}
+
+.nav-links ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 9px 12px;
+  position: relative;
+}
+
+.nav-links ul li:hover{
+  background-color: rgba(175, 175, 175, 0.5);
+}
+
+.nav-links ul li input{
+  text-decoration: none;
+  font-size: 1em;
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.userContainer, .seshCon, .container, .listingsCon{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: black 1px solid;
+  border-radius: 30px;
+  padding: 5% 0;
+  background-color: rgba(90, 90, 90, 0.5);
+  color: white;
+}
+
+.createCon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.createCon a{
+  color: aliceblue;
+}
+
+.formContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer form{
+  margin: 0 5px;
+}
+
+.formContainer form input{
+  margin: 10px;
+  padding: 7px 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+.newUserForm, .logInCon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newUserForm form, .logInCon form{
+  display: table;
+}
+
+.newUserForm p, .logInCon p{
+  display: table-row;
+  margin: 5px 0;
+}
+
+.newUserForm label, .logInCon label{
+  display: table-cell;
+}
+
+.newUserForm #first_name, .newUserForm #last_name, .newUserForm #email, .newUserForm #password, .newUserForm #profile_img, .logInCon #email, .logInCon #password{
+  display: table-cell;
+}
+
+#new-user-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#new-session-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loggedInNav{
+  display: flex;
+}
+
+#submit{
+  padding: 5px 15px;
+  border: none;
+  border-radius: 15px;
+}
+
+.listingsCon a{
+  text-decoration: none;
+  color: aliceblue;
+  border: black 1px solid;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin: 15px;
+}
+
+.listings{
+  width: 60%;
+}
+
+.listing{
+  background-color: rgba(90, 90, 90, 0.7);
+  border: black 1.5px solid;
+  border-radius: 15px;
+  padding: 20px 10px;
+  margin-bottom: 15px;
+}
+
+.listing li{
+  list-style-type: none;
+}
+
+.dateCon{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 7.5px;
+}
+
+
+
+

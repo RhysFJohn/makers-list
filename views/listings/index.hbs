@@ -1,0 +1,22 @@
+<div class="listingsCon">
+  <a href="/listings/new" class="newListing">New Listing</a>
+  <h1>Listings</h1>
+
+  <ul reversed class="listings">
+    {{#each listings}}
+    <div class="listing">
+      <li>
+        <div class="dateCon">
+          <small>Posted at {{dateFormat this.created_at}}</small>
+        </div>
+        <div class="titleCon">
+          {{this.title}}
+        </div>
+        <div class="numberCon">
+          <p>Contact {{this.creator_fname}} {{this.creator_lname}} at {{this.telephone}}</p>
+        </div>
+      </li>
+    </div>
+    {{/each}}
+  </ul>
+</div>
