@@ -30,19 +30,18 @@ It uses:
 
 ### Set up Your project
 1. Fork this repository
-2. Rename your fork to `acebook-<team name>`
-3. Clone your fork to your local machine
-4. Install Node.js dependencies
+2. Clone your fork to your local machine
+3. Install Node.js dependencies
    ```
    npm install
    ```
-5. Install an ESLint plugin for your editor.
-6. Install MongoDB
+4. Install an ESLint plugin for your editor.
+5. Install MongoDB
    ```
    brew tap mongodb/brew
    brew install mongodb-community@4.4
    ```
-7. Start MongoDB
+6. Start MongoDB
    ```
    brew services start mongodb-community@4.4
    ```
