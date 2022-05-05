@@ -15,8 +15,8 @@ describe("Home Page", () => {
   it("Shows 'Log in' and 'Sign up' in nav bar if user is logged out", () => {
     cy.visit("/");
 
-    cy.contains("a", "Sign Up")
-    cy.contains("a", "Log in")
+    cy.contains("input", "Sign Up")
+    cy.contains("input", "Log In")
   });
 
   it("Shows 'Log out' in nav bar if user is logged in", () => {
@@ -26,6 +26,6 @@ describe("Home Page", () => {
     // log in
     cy.logIn();
   
-    cy.contains("input", "Log Out")
+    cy.get(".loggedInNav").contains("input", "Log Out")
   });
 })
